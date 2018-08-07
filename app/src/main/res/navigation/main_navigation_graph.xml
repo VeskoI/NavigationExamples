@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation_graph"
+    app:startDestination="@id/highlightsFragment">
+
+    <fragment
+        android:id="@+id/highlightsFragment"
+        android:name="com.example.vesseliniliev.navigationexample.HighlightsFragment"
+        android:label="Highlights"
+        tools:layout="@layout/fragment_highlights" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.vesseliniliev.navigationexample.SearchFragment"
+        android:label="Search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_searchResultsFragment"
+            app:destination="@id/searchResultsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myTripsFragment"
+        android:name="com.example.vesseliniliev.navigationexample.MyTripsFragment"
+        android:label="My Trips"
+        tools:layout="@layout/fragment_my_trips" />
+    <fragment
+        android:id="@+id/searchResultsFragment"
+        android:name="com.example.vesseliniliev.navigationexample.SearchResultsFragment"
+        android:label="Search Results"
+        tools:layout="@layout/fragment_search_results" />
+</navigation>

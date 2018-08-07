@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/highlightsFragment"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Highlights" />
+
+    <item
+        android:id="@+id/searchFragment"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="Search" />
+
+    <item
+        android:id="@+id/myTripsFragment"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="My Trips" />
+
+</menu>
