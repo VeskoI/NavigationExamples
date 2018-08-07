@@ -19,4 +19,11 @@ class MainActivity : AppCompatActivity(), NavHost {
     override fun getNavController() = Navigation.findNavController(this, R.id.navigation_host)
 
     override fun onSupportNavigateUp() = navController.navigateUp()
+
+    override fun onBackPressed() {
+        val handled = navController.popBackStack()
+        if (!handled) {
+            super.onBackPressed()
+        }
+    }
 }
